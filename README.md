@@ -1,2 +1,3 @@
-# pyhvbench
+# HVBench API
+
 HVBench Python API

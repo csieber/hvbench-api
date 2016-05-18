@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 setup(
-    name="HVBench-API",
+    name="hvbench-api",
 
     version="0.1.0",
 
@@ -14,13 +14,14 @@ setup(
 
     url="http://pypi.python.org/pypi/MyApplication_v010/",
 
-    license="LICENSE.txt",
+    license="LICENSE",
 
-    description="HVBench-API.",
+    description="Python API for hvbench.",
 
-    long_description=open("README.txt").read(),
+    long_description=open("README.md").read(),
 
     install_requires=[
         "python-etc",
+        "argh"
     ],
 )

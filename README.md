@@ -26,13 +26,13 @@ python3 hvbench-ctrl.py reset-config
 Note: If you etcd is not localhost, use **--address** to specify the etcd host:
 
 ```bash
-python3 hvbench-ctrl.py --address 10.0.0.2 reset-config
+hvbench-ctrl --address 10.0.0.2 reset-config
 ```
 
 Now start at least one hvbench instance. Afterwards you can add a tenant to this instance with:
 
 ```bash
-python3 hvbench-ctrl.py add-tenant test
+hvbench-ctrl add-tenant test
 ```
 
 The command **add-tenant** will by default add a constant tenant to instance 1 using port 6633. If you want to add an existing tenant to an instance, you can pass the **--existok** option.
@@ -40,7 +40,7 @@ The command **add-tenant** will by default add a constant tenant to instance 1 u
 To set the rate for this tenant, use **set-rate**:
 
 ```bash
-python3 hvbench-ctrl.py set-rate test 70
+hvbench-ctrl set-rate test 70
 ```
 
 ## Quickstart (hvbench-log)
@@ -48,13 +48,13 @@ python3 hvbench-ctrl.py set-rate test 70
 To receive the logs from the distributed hvbench instances, use *hvbench-log*:
 
 ```bash
-python3 hvbench-log.py
+hvbench-log
 ```
 
 ### Usage
 
 ```
-usage: hvbench-log.py [-h] [-v] [-k KAFKA] [-o OUTPUT]
+usage: hvbench-log [-h] [-v] [-k KAFKA] [-o OUTPUT]
 
 Retrieve the hvbench and hvmonitor logs from kafka.
 

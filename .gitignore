@@ -7,3 +7,4 @@ __pycache__
 .spyderproject
 .ipynb_checkpoints/
 .idea/
+build/

@@ -1,4 +1,7 @@
-from distutils.core import setup
+try:
+        from setuptools import setup
+except ImportError:
+        from distutils.core import setup
 
 setup(
     name="hvbench-api",
@@ -14,7 +17,7 @@ setup(
 
     include_package_data=True,
 
-    url="http://pypi.python.org/pypi/MyApplication_v010/",
+    url="https://github.com/csieber/hvbench",
 
     license="LICENSE",
 
@@ -23,7 +26,7 @@ setup(
     long_description=open("README.md").read(),
 
     install_requires=[
-        "python-etc",
+        "python-etcd",
         "argh"
     ],
 )

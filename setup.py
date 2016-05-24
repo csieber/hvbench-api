@@ -10,7 +10,7 @@ setup(
 
     packages=["hvbenchapi"],
 
-    scripts=['hvbench-ctrl'],
+    scripts=['hvbench-ctrl', 'hvbench-log'],
 
     include_package_data=True,
 

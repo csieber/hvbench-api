@@ -82,7 +82,8 @@ def clean_hvmonitor(jmsg):
 
     return jmsg
 
-if __name__ == "__main__":
+
+def main():
 
     parser = argparse.ArgumentParser(description="Retrieve the hvbench and hvmonitor logs from kafka.")
 

@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+
+import hvbenchapi.cmdline as cmdline
+
+if __name__ == "__main__":
+    cmdline.main()

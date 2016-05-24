@@ -10,6 +10,8 @@ setup(
 
     packages=["hvbenchapi"],
 
+    scripts=['hvbench-ctrl'],
+
     include_package_data=True,
 
     url="http://pypi.python.org/pypi/MyApplication_v010/",

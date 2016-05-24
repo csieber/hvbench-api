@@ -130,10 +130,10 @@ def set_weights(tenant, fmod=None, feat=None, echo=None, statsPort=None, statsFl
         bench.tenant(tenant).set_weights({'PACKET_OUT_UDP': int(packOut)})
 
 
-parser = argh.ArghParser()
-parser.add_commands([populate, reset_config, add_tenant, set_study, set_rate, set_weights])
+def main():
 
-if __name__ == "__main__":
+    parser = argh.ArghParser()
+    parser.add_commands([populate, reset_config, add_tenant, set_study, set_rate, set_weights])
 
     parser.add_argument('-v', '--verbose', help="Enable debug log.", dest='verbose', action='store_true')
     parser.add_argument('-a', '--address', help="URL/Address of the etcd host.", default=ARGS['address'])

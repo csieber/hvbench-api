@@ -20,7 +20,7 @@ python3 setup.py install
 You can use **reset-config** or **populate** to create an initial configuration:
 
 ```bash
-python3 hvbench-ctrl.py reset-config
+hvbench-ctrl reset-config
 ```
 
 Note: If you etcd is not localhost, use **--address** to specify the etcd host:

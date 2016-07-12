@@ -32,6 +32,7 @@ setup(
 
     install_requires=[
         "python-etcd",
+        "kafka-python",
         "argh"
     ],
 )

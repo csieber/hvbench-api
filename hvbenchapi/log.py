@@ -43,7 +43,7 @@ class Study(object):
 
         self._basep = basep
 
-        os.makedirs(ldir, exist_ok=True)
+        os.makedirs(basep, exist_ok=True)
 
         self._fbench = LogCSV(os.path.join(self._basep, "hvbench.csv"))
         self._fcpu = LogCSV(os.path.join(self._basep, "hvmonitor.csv"))
